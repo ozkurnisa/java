@@ -1,0 +1,37 @@
+package java_101;
+interface Arayuz {
+    //interface - arayüz sýnýf benzeri yapýlardýr.
+
+    // sýnýflara miras verbilirler
+    void belirtec();
+    void isaretci();
+}
+
+class Mirasci implements Arayuz{
+
+    //Interface içindeki tüm methodlar subclassta tanýmlanmak zorundadýr.
+
+    @Override
+    public void belirtec() {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public void isaretci() {
+        // TODO Auto-generated method stub
+
+    } //Interface'ler implements ile miras verirler
+
+}
+
+public class java20_interface {
+
+    public static void main(String[] args) {
+        //Arayuz arayuz = new Arayuz();
+
+        Mirasci m = new Mirasci();
+        m.belirtec();
+
+    }
+}
